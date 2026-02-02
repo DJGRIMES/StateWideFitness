@@ -1,0 +1,86 @@
+{
+  "navigation": {
+    "type": "top",
+    "items": [
+      { "label": "Home", "anchor": "#home", "sectionId": "hero" },
+      { "label": "Membership", "anchor": "#membership", "sectionId": "membership" },
+      { "label": "Calendar", "anchor": "#calendar", "sectionId": "calendar" },
+      { "label": "About", "anchor": "#about", "sectionId": "about" },
+      { "label": "Contact", "anchor": "#contact", "sectionId": "contact" }
+    ]
+  },
+
+  "sections": [
+    {
+      "id": "hero",
+      "type": "heroCarousel",
+      "enabled": true,
+      "anchor": "home",
+      "source": "hero.json"
+    },
+    {
+      "id": "gymDetails",
+      "type": "gymDetails",
+      "enabled": true,
+      "anchor": "details",
+      "source": "gym-details.json"
+    },
+    {
+      "id": "dropIn",
+      "type": "ctaBlock",
+      "enabled": true,
+      "anchor": "drop-in",
+      "source": "drop-in.json"
+    },
+    {
+      "id": "membership",
+      "type": "membership",
+      "enabled": true,
+      "anchor": "membership",
+      "source": "membership.json"
+    },
+    {
+      "id": "calendar",
+      "type": "calendarEmbed",
+      "enabled": true,
+      "anchor": "calendar",
+      "source": "calendar.json"
+    },
+    {
+      "id": "spaceRental",
+      "type": "ctaBlock",
+      "enabled": true,
+      "anchor": "space",
+      "source": "space-rental.json"
+    },
+    {
+      "id": "about",
+      "type": "about",
+      "enabled": true,
+      "anchor": "about",
+      "source": "about.json"
+    },
+    {
+      "id": "bios",
+      "type": "bios",
+      "enabled": true,
+      "anchor": "coaches",
+      "source": "bios.json"
+    },
+    {
+      "id": "nonprofit",
+      "type": "ctaBlock",
+      "enabled": true,
+      "anchor": "community",
+      "source": "nonprofit.json"
+    },
+    {
+      "id": "contact",
+      "type": "contact",
+      "enabled": true,
+      "anchor": "contact",
+      "source": "contact.json"
+    }
+  ],
+
+}
