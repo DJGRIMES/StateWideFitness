@@ -1,0 +1,29 @@
+{
+  "id": "contact",
+  "type": "structured",
+  "enabled": true,
+  "title": "Contact",
+  "layout": "keyValue",
+  "itemType": "contactField",
+  "itemSchema": {
+    "fields": {
+      "label": { "type": "string" },
+      "value": { "type": "string" }
+    },
+    "requiredFields": ["label", "value"]
+  },
+  "items": [
+    { "label": "Phone", "value": "989-317-5896" },
+    { "label": "Email", "value": "TBD_PENDING_CONFIRMATION" },
+    {
+      "label": "Address",
+      "value": "306 W. Michigan Avenue, Centennial Hall, Downtown Mount Pleasant, MI"
+    }
+  ],
+  "ctas": [
+    {
+      "label": "Get Directions",
+      "linkKey": "directions"
+    }
+  ]
+}
