@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "document": "voice",
+    "version": "0.1.0",
+    "notes": "Stable source of truth for writing, tone, accessibility, and consistency rules. This file should change rarely."
+  },
+
+  "writing": {
+    "readingLevel": "simple",
+    "tone": ["direct", "supportive", "community"],
+    "styleRules": [
+      "Use short sentences.",
+      "Prefer bullets over long paragraphs.",
+      "Avoid jargon and buzzwords.",
+      "Keep blurbs scannable (1–2 sentences).",
+      "Use clear prices and times when available.",
+      "Avoid overly formal language."
+    ],
+    "formatting": {
+      "maxParagraphSentences": 3,
+      "preferBulletsFor": ["benefits", "highlights", "steps", "schedule"],
+      "ctaLabelGuidance": "Use short action labels like 'View Class Schedule' or 'Request Rental Info'."
+    }
+  },
+
+  "consistency": {
+    "globalFactsSource": "globals.json",
+    "rules": [
+      "Phone, email, and address must only come from globals.contact.",
+      "Calendar links should only come from globals.links.calendar.",
+      "If a value is TBD_PENDING_CONFIRMATION, do not invent it in page content."
+    ],
+    "terminology": {
+      "citySpelling": "Mount Pleasant",
+      "gymNamePrimary": "Mt. Pleasant Boxing & Fitness",
+      "legalName": "Eastside Boxing Club 517 LLC",
+      "dropInLabel": "$10 Drop-In Classes"
+    }
+  },
+
+  "accessibility": {
+    "rules": [
+      "If images are used, include alt text.",
+      "Calendar sections should include readable schedule text in addition to embeds when possible.",
+      "Buttons and links should be clear and descriptive."
+    ]
+  }
+}
