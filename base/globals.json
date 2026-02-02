@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "document": "globals",
+    "version": "0.1.0",
+    "lastUpdated": "2026-02-02",
+    "notes": "Editable data points (single source of truth). Missing values are marked TBD_PENDING_CONFIRMATION."
+  },
+
+  "identity": {
+    "siteName": "Mt. Pleasant Boxing & Fitness",
+    "legalName": "Eastside Boxing Club 517 LLC",
+    "tagline": "Boxing, fitness, and mentorship for all ages."
+  },
+
+  "contact": {
+    "phone": {
+      "display": "989-317-5896",
+      "tel": "tel:+19893175896"
+    },
+    "email": {
+      "display": "TBD_PENDING_CONFIRMATION",
+      "mailto": "TBD_PENDING_CONFIRMATION",
+      "forwardingNote": "Email needs to be created and forwarded to Kolmarji and Andrew."
+    },
+    "address": {
+      "street": "306 W. Michigan Avenue",
+      "suiteOrBuilding": "Centennial Hall",
+      "neighborhoodOrArea": "Downtown Mount Pleasant",
+      "city": "Mount Pleasant",
+      "state": "MI",
+      "postalCode": "TBD_PENDING_CONFIRMATION"
+    },
+    "social": {
+      "facebook": "TBD_PENDING_CONFIRMATION",
+      "instagram": "TBD_PENDING_CONFIRMATION",
+      "tiktok": "TBD_PENDING_CONFIRMATION",
+      "other": []
+    }
+  },
+
+  "location": {
+    "primaryLocationLabel": "Mount Pleasant",
+    "map": {
+      "embedUrl": "TBD_PENDING_CONFIRMATION",
+      "directionsUrl": "TBD_PENDING_CONFIRMATION",
+      "notes": "Map/directions URLs intentionally stored here for easy updates."
+    }
+  },
+
+  "links": {
+    "calendar": {
+      "embedUrl": "TBD_PENDING_CONFIRMATION",
+      "publicUrl": "TBD_PENDING_CONFIRMATION",
+      "label": "View Class Schedule"
+    },
+    "boardSignup": {
+      "url": "TBD_PENDING_CONFIRMATION",
+      "label": "Join the Board"
+    },
+    "call": {
+      "url": "tel:+19893175896",
+      "label": "Call Now"
+    },
+    "email": {
+      "url": "TBD_PENDING_CONFIRMATION",
+      "label": "Email Us"
+    },
+    "directions": {
+      "url": "TBD_PENDING_CONFIRMATION",
+      "label": "Get Directions"
+    }
+  },
+
+  "business": {
+    "dropIn": {
+      "price": "$10",
+      "notes": "Drop-in rate is the same for youth and adult."
+    },
+    "memberships": {
+      "youth": "$50 / month",
+      "adult": "$100 / month",
+      "benefits": ["Classes", "Open gym access"]
+    },
+    "scheduleSummary": [
+      "Open Gym: Mon–Thu, 1:00–8:00pm",
+      "Boxing Technique Circuit Training: Tue & Thu, 5:30–6:30pm",
+      "MMA / Kickboxing & Wrestling: Mon–Thu, 8:00–9:00pm"
+    ]
+  },
+
+  "assets": {
+    "logo": "TBD_PENDING_CONFIRMATION",
+    "heroImages": "TBD_PENDING_CONFIRMATION",
+    "gallery": "TBD_PENDING_CONFIRMATION"
+  }
+}
