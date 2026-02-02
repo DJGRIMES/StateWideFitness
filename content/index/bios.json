@@ -1,0 +1,28 @@
+{
+  "id": "bios",
+  "type": "structured",
+  "enabled": true,
+  "title": "Meet the Coaches",
+  "layout": "cards",
+  "itemType": "person",
+  "itemSchema": {
+    "fields": {
+      "name": { "type": "string" },
+      "role": { "type": "string" },
+      "bio": { "type": "string" }
+    },
+    "requiredFields": ["name", "role", "bio"]
+  },
+  "items": [
+    {
+      "name": "Kolmarji Harris",
+      "role": "Founder",
+      "bio": "Kolmarji Harris is a lifelong boxer, mentor, and community leader. He uses boxing as a tool to teach discipline, confidence, and resilience, with a strong focus on youth development and community support."
+    },
+    {
+      "name": "Andrew Beals",
+      "role": "Head Coach",
+      "bio": "Andrew Beals is a USA Boxing–certified coach, nationally certified sports medicine personal trainer, and Marine veteran. He mentors youth and families through boxing, fitness, and life skills, building champions inside and outside the ring."
+    }
+  ]
+}
