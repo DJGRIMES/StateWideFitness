@@ -1,0 +1,11 @@
+{
+  "id": "dropIn",
+  "type": "cta",
+  "enabled": true,
+  "title": "$10 Drop-In Classes",
+  "body": "Join our drop-in classes for only $10. Open to all ages and skill levels — come train, get fit, and build confidence.",
+  "cta": {
+    "label": "View Class Schedule",
+    "linkKey": "calendar"
+  }
+}
