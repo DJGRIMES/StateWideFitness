@@ -13,71 +13,55 @@
   "sections": [
     {
       "id": "hero",
-      "type": "heroCarousel",
-      "enabled": true,
+      "type": "hero",
       "anchor": "home",
       "source": "hero.json"
     },
     {
       "id": "gymDetails",
-      "type": "gymDetails",
-      "enabled": true,
+      "type": "details",
       "anchor": "details",
       "source": "gym-details.json"
     },
     {
       "id": "dropIn",
-      "type": "ctaBlock",
-      "enabled": true,
+      "type": "cta",
       "anchor": "drop-in",
       "source": "drop-in.json"
     },
     {
       "id": "membership",
-      "type": "membership",
-      "enabled": true,
+      "type": "structured",
       "anchor": "membership",
       "source": "membership.json"
     },
     {
       "id": "calendar",
-      "type": "calendarEmbed",
-      "enabled": true,
+      "type": "Embed",
       "anchor": "calendar",
       "source": "calendar.json"
     },
     {
       "id": "spaceRental",
-      "type": "ctaBlock",
-      "enabled": true,
+      "type": "details",
       "anchor": "space",
       "source": "space-rental.json"
     },
     {
       "id": "about",
-      "type": "about",
-      "enabled": true,
+      "type": "details",
       "anchor": "about",
       "source": "about.json"
     },
     {
       "id": "bios",
-      "type": "bios",
-      "enabled": true,
+      "type": "structured",
       "anchor": "coaches",
       "source": "bios.json"
     },
     {
-      "id": "nonprofit",
-      "type": "ctaBlock",
-      "enabled": true,
-      "anchor": "community",
-      "source": "nonprofit.json"
-    },
-    {
       "id": "contact",
-      "type": "contact",
-      "enabled": true,
+      "type": "structured",
       "anchor": "contact",
       "source": "contact.json"
     }
