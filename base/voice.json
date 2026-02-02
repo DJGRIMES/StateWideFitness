@@ -27,12 +27,12 @@
     "globalFactsSource": "globals.json",
     "rules": [
       "Phone, email, and address must only come from globals.contact.",
-      "Calendar links should only come from globals.links.calendar.",
+      "Calendar links should come from the calendar section content.",
       "If a value is TBD_PENDING_CONFIRMATION, do not invent it in page content."
     ],
     "terminology": {
-      "citySpelling": "Mount Pleasant",
-      "gymNamePrimary": "Mt. Pleasant Boxing & Fitness",
+      "citySpelling": "Mt. Pleasant",
+      "gymNamePrimary": "Statewide Fitness",
       "legalName": "Eastside Boxing Club 517 LLC",
       "dropInLabel": "$10 Drop-In Classes"
     }

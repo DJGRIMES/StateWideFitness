@@ -23,8 +23,9 @@
       "forwardingNote": "Email needs to be created and forwarded to Kolmarji and Andrew."
     },
     "address": {
+      "full": "306 W. Michigan St, Centennial Hall, Downtown Mt. Pleasant, MI 48858",
       "street": "306 W. Michigan St",
-      "city": "Mt Pleasant",
+      "city": "Mt. Pleasant",
       "state": "MI",
       "zip": "48858"
     },
@@ -34,8 +35,5 @@
       "tiktok": "TBD_PENDING_CONFIRMATION",
       "other": []
     }
-  },
-
-
-
+  }
 }

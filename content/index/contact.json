@@ -13,11 +13,11 @@
     "requiredFields": ["label", "value"]
   },
   "items": [
-    { "label": "Phone", "value": "989-317-5896" },
-    { "label": "Email", "value": "TBD_PENDING_CONFIRMATION" },
+    { "label": "Phone", "value": "{{globals.contact.phone.display}}" },
+    { "label": "Email", "value": "{{globals.contact.email.display}}" },
     {
       "label": "Address",
-      "value": "306 W. Michigan Avenue, Centennial Hall, Downtown Mount Pleasant, MI"
+      "value": "{{globals.contact.address.full}}"
     }
   ],
   "ctas": [
