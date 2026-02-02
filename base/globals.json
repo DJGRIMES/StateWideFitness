@@ -7,8 +7,8 @@
   },
 
   "identity": {
-    "siteName": "Mt. Pleasant Boxing & Fitness",
-    "legalName": "Eastside Boxing Club 517 LLC",
+    "siteName": "Statewide Fitness,
+    "legalName": "",
     "tagline": "Boxing, fitness, and mentorship for all ages."
   },
 
@@ -23,12 +23,10 @@
       "forwardingNote": "Email needs to be created and forwarded to Kolmarji and Andrew."
     },
     "address": {
-      "street": "306 W. Michigan Avenue",
-      "suiteOrBuilding": "Centennial Hall",
-      "neighborhoodOrArea": "Downtown Mount Pleasant",
-      "city": "Mount Pleasant",
+      "street": "306 W. Michigan St",
+      "city": "Mt Pleasant",
       "state": "MI",
-      "postalCode": "TBD_PENDING_CONFIRMATION"
+      "zip": "48858"
     },
     "social": {
       "facebook": "TBD_PENDING_CONFIRMATION",
@@ -38,59 +36,6 @@
     }
   },
 
-  "location": {
-    "primaryLocationLabel": "Mount Pleasant",
-    "map": {
-      "embedUrl": "TBD_PENDING_CONFIRMATION",
-      "directionsUrl": "TBD_PENDING_CONFIRMATION",
-      "notes": "Map/directions URLs intentionally stored here for easy updates."
-    }
-  },
 
-  "links": {
-    "calendar": {
-      "embedUrl": "TBD_PENDING_CONFIRMATION",
-      "publicUrl": "TBD_PENDING_CONFIRMATION",
-      "label": "View Class Schedule"
-    },
-    "boardSignup": {
-      "url": "TBD_PENDING_CONFIRMATION",
-      "label": "Join the Board"
-    },
-    "call": {
-      "url": "tel:+19893175896",
-      "label": "Call Now"
-    },
-    "email": {
-      "url": "TBD_PENDING_CONFIRMATION",
-      "label": "Email Us"
-    },
-    "directions": {
-      "url": "TBD_PENDING_CONFIRMATION",
-      "label": "Get Directions"
-    }
-  },
 
-  "business": {
-    "dropIn": {
-      "price": "$10",
-      "notes": "Drop-in rate is the same for youth and adult."
-    },
-    "memberships": {
-      "youth": "$50 / month",
-      "adult": "$100 / month",
-      "benefits": ["Classes", "Open gym access"]
-    },
-    "scheduleSummary": [
-      "Open Gym: Mon–Thu, 1:00–8:00pm",
-      "Boxing Technique Circuit Training: Tue & Thu, 5:30–6:30pm",
-      "MMA / Kickboxing & Wrestling: Mon–Thu, 8:00–9:00pm"
-    ]
-  },
-
-  "assets": {
-    "logo": "TBD_PENDING_CONFIRMATION",
-    "heroImages": "TBD_PENDING_CONFIRMATION",
-    "gallery": "TBD_PENDING_CONFIRMATION"
-  }
 }
