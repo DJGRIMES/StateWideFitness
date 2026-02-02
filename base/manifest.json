@@ -37,7 +37,7 @@
     },
     {
       "id": "calendar",
-      "type": "Embed",
+      "type": "embed",
       "anchor": "calendar",
       "source": "calendar.json"
     },
@@ -65,6 +65,5 @@
       "anchor": "contact",
       "source": "contact.json"
     }
-  ],
-
+  ]
 }

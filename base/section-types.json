@@ -146,4 +146,17 @@
       "required": ["title", "embed"],
       "optional": ["body", "fallback", "ctas", "variant"],
       "fieldNotes": {
-        "title": "Section titl
+        "title": "Section title.",
+        "embed": "Embed object.",
+        "body": "Optional TextBlock to introduce the embed.",
+        "fallback": "Optional TextBlock or string[] shown when the embed cannot load.",
+        "ctas": "CTA[]",
+        "variant": "Rendering variant string."
+      },
+      "rules": [
+        "Provide fallback text when possible.",
+        "embed.embedUrl must be a fully-qualified URL."
+      ]
+    }
+  }
+}
