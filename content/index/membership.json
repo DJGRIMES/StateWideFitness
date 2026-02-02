@@ -1,0 +1,40 @@
+{
+  "id": "membership",
+  "type": "structured",
+  "enabled": true,
+  "title": "Membership Options",
+  "layout": "cards",
+  "itemType": "plan",
+  "itemSchema": {
+    "fields": {
+      "name": { "type": "string" },
+      "price": { "type": "string" },
+      "includes": { "type": "string[]" }
+    },
+    "requiredFields": ["name", "price", "includes"]
+  },
+  "items": [
+    {
+      "name": "Youth Membership",
+      "price": "$50 / month",
+      "includes": [
+        "Unlimited classes",
+        "Open gym access"
+      ]
+    },
+    {
+      "name": "Adult Membership",
+      "price": "$100 / month",
+      "includes": [
+        "Unlimited classes",
+        "Open gym access"
+      ]
+    }
+  ],
+  "ctas": [
+    {
+      "label": "Contact Us to Join",
+      "anchor": "#contact"
+    }
+  ]
+}
