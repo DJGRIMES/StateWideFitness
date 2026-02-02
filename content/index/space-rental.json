@@ -1,0 +1,13 @@
+{
+  "id": "spaceRental",
+  "type": "details",
+  "enabled": true,
+  "title": "Space Available for Coaches",
+  "body": "Gym space is available for outside trainers and coaches. Ideal for personal training, small group sessions, and fitness classes.",
+  "ctas": [
+    {
+      "label": "Request Rental Info",
+      "anchor": "#contact"
+    }
+  ]
+}
