@@ -1,0 +1,13 @@
+{
+  "id": "hero",
+  "type": "hero",
+  "enabled": true,
+  "headline": "Train. Grow. Succeed.",
+  "subhead": "Boxing, fitness, and mentorship for all ages.",
+  "ctas": [
+    {
+      "label": "View Class Schedule",
+      "linkKey": "calendar"
+    }
+  ]
+}
