@@ -1,0 +1,12 @@
+{
+  "id": "gymDetails",
+  "type": "details",
+  "enabled": true,
+  "title": "Gym Details",
+  "body": "Mt. Pleasant Boxing & Fitness is a community gym offering boxing, MMA, and fitness classes for youth and adults. Our focus is building confidence, discipline, and overall health in a supportive environment.",
+  "bullets": [
+    "All ages and skill levels welcome",
+    "$10 drop-in classes",
+    "Downtown Mount Pleasant location"
+  ]
+}
