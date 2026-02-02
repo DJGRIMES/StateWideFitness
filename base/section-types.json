@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "schemaName": "section-types",
+    "version": "0.1.0",
+    "description": "Reusable contracts for agentic one-page websites. Defines allowed section types and shared objects."
+  },
+
+  "shared": {
+    "SectionBase": {
+      "required": ["id", "type", "enabled"],
+      "optional": ["anchor", "className", "tags", "notes"]
+    },
+
+    "TextBlock": {
+      "allowed": ["string", "string[]"],
+      "notes": "Either a single string or an array of paragraphs."
+    },
+
+    "CTA": {
+      "required": ["label"],
+      "optional": ["href", "anchor", "linkKey", "style", "ariaLabel", "newTab"],
+      "rules": [
+        "CTA must specify exactly one target: href OR anchor OR linkKey.",
+        "label should be short (recommended <= 32 chars).",
+        "If newTab is true, href must be used."
+      ]
+    },
+
+    "Media": {
+      "required": ["type"],
+      "optional": ["src", "assetKey", "alt", "caption", "credit", "aspectRatio"],
+      "rules": [
+        "Use assetKey for managed assets when possible.",
+        "alt is strongly recommended for images.",
+        "type is one of: image, video."
+      ]
+    },
+
+    "Embed": {
+      "required": ["provider", "embedUrl"],
+      "optional": ["title", "height", "loading", "allow", "sandbox"],
+      "rules": [
+        "provider is a short string like: googleCalendar, googleMaps, youtube, vimeo, other.",
+        "embedUrl must be a fully-qualified URL."
+      ]
+    },
+
+    "ItemSchema": {
+      "required": ["fields"],
+      "optional": ["requiredFields", "rules"],
+      "notes": "ItemSchema constrains item keys for structured sections.",
+      "fieldSpec": {
+        "fieldName": "string",
+        "type": "string",
+        "required": "boolean",
+        "notes": "string"
+      }
+    }
+  },
+
+  "types": {
+    "hero": {
+      "inherits": "SectionBase",
+      "purpose": "Top-of-page main card. Usually used once.",
+      "required": ["headline", "subhead"],
+      "optional": ["media", "ctas", "badge", "variant"],
+      "fieldNotes": {
+        "headline": "Short primary headline.",
+        "subhead": "One short supporting sentence.",
+        "media": "Media[]; can support a carousel if multiple images are provided.",
+        "ctas": "CTA[]; recommended 0-2.",
+        "badge": "Short label like location or program focus.",
+        "variant": "Rendering variant string (e.g., 'carousel', 'static')."
+      },
+      "rules": [
+        "headline and subhead should be simple language.",
+        "If media length > 1, renderer may treat as carousel."
+      ]
+    },
+
+    "details": {
+      "inherits": "SectionBase",
+      "purpose": "General-purpose text card/section.",
+      "required": ["title", "body"],
+      "optional": ["subtitle", "bullets", "media", "ctas", "variant"],
+      "fieldNotes": {
+        "title": "Section title.",
+        "body": "TextBlock (string or string[]).",
+        "subtitle": "Optional short supporting line.",
+        "bullets": "string[] (recommended <= 6).",
+        "media": "Media[]",
+        "ctas": "CTA[]",
+        "variant": "Rendering variant string (e.g., 'card', 'wide')."
+      },
+      "rules": [
+        "Keep body readable; prefer short paragraphs.",
+        "Use bullets for scannable info."
+      ]
+    },
+
+    "cta": {
+      "inherits": "SectionBase",
+      "purpose": "Short, high-impact section with one primary action.",
+      "required": ["title", "body", "cta"],
+      "optional": ["finePrint", "media", "variant"],
+      "fieldNotes": {
+        "title": "Short title.",
+        "body": "Short TextBlock (prefer single string).",
+        "cta": "Single CTA object (primary action).",
+        "finePrint": "Optional extra note/disclaimer (one line).",
+        "media": "Optional Media[]",
+        "variant": "Rendering variant string (e.g., 'highlight', 'banner')."
+      },
+      "rules": [
+        "Exactly one primary CTA is required.",
+        "Body should be short (recommended 1-2 sentences)."
+      ]
+    },
+
+    "structured": {
+      "inherits": "SectionBase",
+      "purpose": "Repeatable items rendered as cards/list/table/grid/key-value.",
+      "required": ["title", "layout", "itemType", "itemSchema", "items"],
+      "optional": ["intro", "ctas", "columns", "variant"],
+      "fieldNotes": {
+        "title": "Section title.",
+        "layout": "One of: cards, list, table, grid, keyValue.",
+        "itemType": "A short identifier like: person, plan, scheduleLine, contactField, faq.",
+        "itemSchema": "Constrains allowed fields and required fields for each item.",
+        "items": "Array of objects matching itemSchema.",
+        "intro": "Optional TextBlock intro.",
+        "ctas": "Optional CTA[] for the section.",
+        "columns": "Optional string[] for table/grid layouts.",
+        "variant": "Rendering variant string."
+      },
+      "rules": [
+        "items must only contain keys defined in itemSchema.fields.",
+        "All fields listed in itemSchema.requiredFields must exist in each item.",
+        "layout must be supported by the renderer."
+      ]
+    },
+
+    "embed": {
+      "inherits": "SectionBase",
+      "purpose": "Dedicated embed block (calendar, map, video, etc.).",
+      "required": ["title", "embed"],
+      "optional": ["body", "fallback", "ctas", "variant"],
+      "fieldNotes": {
+        "title": "Section titl
