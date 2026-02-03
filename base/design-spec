@@ -1,0 +1,307 @@
+1. Overall Theme & Tone
+
+Brand Feel
+
+  High-intensity, athletic, competitive
+
+  Premium but gritty
+
+  Masculine-leaning, performance-driven
+
+  Strong contrast and decisive visual hierarchy
+
+Design Keywords
+
+  Bold
+
+  Impactful
+
+  Focused
+
+  Minimal ornamentation
+
+  Editorial / sports-magazine inspired
+
+
+
+2. Color System
+
+Primary Colors
+
+  Near-Black / Charcoal
+
+    - Used for hero background, footer, and high-contrast sections
+
+    - Approx: #0B0B0D – #111216
+
+  Strong Red (Accent / CTA)
+
+    - Used for emphasis, highlights, calls to action, and key words
+
+    - Approx: #E10600 – #C80000
+
+Secondary / Supporting Colors
+
+    Off-White / Light Gray
+
+      - Background for content sections
+
+      - Approx: #F2F2F2 – #EDEDED
+
+    Pure White
+
+      - Primary text on dark backgrounds
+
+      - Icon fills
+
+      - Approx: #FFFFFF
+
+    Muted Gray
+
+      - Secondary text on light backgrounds
+
+      - Approx: #8A8A8A – #A0A0A0
+
+Color Usage Rules
+
+  - Red is never decorative—only for emphasis or action
+
+  - Large text blocks are either white-on-black or black-on-light
+
+  - Avoid gradients except for subtle shadowing or overlays
+
+
+3. Typography System
+Font Style
+
+  Primary Typeface: Bold, condensed sans-serif
+  (e.g., Oswald, Bebas Neue, Inter Tight, Anton-style)
+  
+  Secondary Typeface: Clean sans-serif for body copy
+  (e.g., Inter, Roboto, Source Sans)
+
+Typography Hierarchy
+
+  Hero Headlines
+
+    - All caps
+    
+    - Very large scale
+    
+    - Tight line height
+    
+    - Mixed color emphasis (white + red)
+
+  Section Headers
+
+    - Uppercase
+    
+    - Medium-large
+    
+    - Strong weight (600–700)
+
+  Body Text
+
+    - Regular weight
+    
+    - Comfortable line height
+    
+    - Neutral gray on light backgrounds
+
+  Navigation / Utility Text
+
+    - Small caps or uppercase
+    
+    - High letter spacing
+    
+    - Minimal weight contrast
+
+
+4. Layout & Grid
+
+Structure
+  
+  Full-width hero section
+  
+  Clear vertical stacking of sections
+  
+  Strong horizontal alignment
+  
+  Consistent margins and padding
+
+Grid Behavior
+
+  Desktop-first, responsive down
+  
+  Two-column layouts used for:
+  
+    Image + content pairing
+  
+  Icons grouped in evenly spaced horizontal rows
+
+Spacing
+
+  Generous vertical spacing between sections
+  
+  Tight spacing within grouped elements (icons + labels)
+  
+  Visual breathing room around CTAs
+
+
+
+5. Navigation & Header
+
+Header Style
+
+Transparent or dark background over hero
+
+Minimal navigation items
+
+CTA button visually separated (accent color)
+
+Navigation Behavior
+
+Simple hover states (color change only)
+
+No drop shadows or complex animations
+
+Fixed or sticky behavior optional but appropriate
+
+
+6. Buttons & CTAs
+Primary Button
+
+Solid red background
+
+White text
+
+Rectangular with slightly rounded corners
+
+Strong visual weight
+
+Secondary Button (if used)
+
+White or transparent background
+
+Red or black text
+
+Red border optional
+
+Interaction States
+
+Hover: subtle darkening or brightness shift
+
+Active: slight scale or opacity change
+
+No heavy motion or bounce effects
+
+
+7. Iconography
+
+Style
+
+Line or minimal filled icons
+
+Single color (red or black depending on background)
+
+Simple, recognizable silhouettes
+
+Usage
+
+Used to represent feature categories
+
+Always paired with short labels
+
+Consistent size and spacing
+
+
+8. Imagery Treatment (Non-Descriptive)
+
+High contrast photography
+
+Dark backgrounds or dramatic lighting
+
+Subjects isolated clearly from background
+
+Images serve as energy drivers, not decoration
+
+Image Placement
+
+Hero: dominant, edge-to-edge
+
+Supporting sections: framed within grid
+
+No rounded images; sharp edges only
+
+
+9. Section Styling Patterns
+Hero Section
+
+Dark background
+
+Oversized headline
+
+Strong focal point
+
+Minimal distractions
+
+Feature Strip
+
+Light background
+
+Icon + label repeat
+
+Horizontally aligned
+
+Content Section
+
+Light background
+
+Text block with strong left alignment
+
+Vertical accent line or color block for emphasis
+
+Footer
+
+Dark background
+
+Minimal content
+
+Small typography
+
+Social icons aligned horizontally
+
+
+10. Motion & Effects (Optional)
+
+Minimal transitions
+
+Fade or color-shift on hover
+
+No parallax required
+
+Avoid over-animation—strength comes from stillness
+
+
+
+11. Accessibility Notes
+
+High color contrast throughout
+
+Large headline text improves readability
+
+Clear CTA distinction
+
+Icons should not be the sole indicator of meaning
+
+
+
+12. Developer Implementation Notes
+
+CSS variables recommended for color tokens
+
+Utility-first CSS (Tailwind-style) maps well to layout
+
+Avoid heavy JS—layout is primarily structural
+
+Image overlays can be achieved via pseudo-elements
