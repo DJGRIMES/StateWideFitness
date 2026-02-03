@@ -6,6 +6,7 @@
 - **Section schemas** live in `base/section-types.json`.
 - **Section order and nav** live in `base/manifest.json`.
 - **Section content** lives in `content/index/*.json`.
+- **Design standards** live in `base/design-spec.json`.
 
 ## Data usage rules
 - Contact values must come from `base/globals.json` and be referenced in content using string tokens:
