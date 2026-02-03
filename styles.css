@@ -1,14 +1,16 @@
 :root {
   color-scheme: light;
-  --bg: #0f172a;
-  --bg-soft: #111827;
+  --bg: #0b0b0d;
+  --bg-soft: #111216;
   --card: #ffffff;
-  --text: #0f172a;
-  --text-invert: #f8fafc;
-  --accent: #f97316;
-  --accent-dark: #ea580c;
-  --muted: #64748b;
-  --border: #e2e8f0;
+  --text: #0b0b0d;
+  --text-invert: #ffffff;
+  --accent: #e10600;
+  --accent-dark: #c80000;
+  --muted: #8a8a8a;
+  --border: #d6d6d6;
+  --surface: #f2f2f2;
+  --focus: #ffffff;
 }
 
 * {
@@ -19,9 +21,9 @@
 
 body {
   font-family: "Inter", "Segoe UI", system-ui, sans-serif;
-  background: #f8fafc;
+  background: var(--surface);
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 a {
@@ -32,14 +34,15 @@ a {
 header {
   background: var(--bg);
   color: var(--text-invert);
-  padding: 18px 0;
+  padding: 20px 0;
   position: sticky;
   top: 0;
   z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .container {
-  width: min(1100px, 92%);
+  width: min(1200px, 92%);
   margin: 0 auto;
 }
 
@@ -59,23 +62,40 @@ header {
 
 .nav a {
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .hero {
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background: var(--bg);
   color: var(--text-invert);
-  padding: 80px 0 70px;
+  padding: 96px 0 88px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: var(--accent);
 }
 
 .hero h1 {
+  font-family: "Oswald", "Arial Narrow", "Helvetica Neue", sans-serif;
   font-size: clamp(2.5rem, 4vw, 3.4rem);
   margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.05;
 }
 
 .hero p {
   font-size: 1.15rem;
   max-width: 520px;
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .button {
@@ -85,22 +105,34 @@ header {
   background: var(--accent);
   color: #ffffff;
   padding: 12px 22px;
-  border-radius: 999px;
-  font-weight: 600;
-  transition: background 0.2s ease;
+  border-radius: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: background 0.2s ease, transform 0.2s ease;
+  border: 2px solid transparent;
 }
 
 .button:hover {
   background: var(--accent-dark);
+  transform: translateY(-1px);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
 }
 
 section {
-  padding: 70px 0;
+  padding: 84px 0;
 }
 
 section h2 {
+  font-family: "Oswald", "Arial Narrow", "Helvetica Neue", sans-serif;
   font-size: 2rem;
   margin-bottom: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .card-grid {
@@ -111,19 +143,21 @@ section h2 {
 
 .card {
   background: var(--card);
-  border-radius: 16px;
-  padding: 20px;
+  border-radius: 8px;
+  padding: 22px;
   border: 1px solid var(--border);
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 12px 26px rgba(11, 11, 13, 0.08);
 }
 
 .pill {
-  background: rgba(249, 115, 22, 0.15);
-  color: #9a3412;
-  font-weight: 600;
+  background: rgba(225, 6, 0, 0.12);
+  color: var(--accent);
+  font-weight: 700;
   padding: 4px 12px;
   border-radius: 999px;
-  font-size: 0.85rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .details {
@@ -145,11 +179,17 @@ section h2 {
   margin-right: 8px;
 }
 
+.details > div:first-child {
+  border-left: 4px solid var(--accent);
+  padding-left: 18px;
+}
+
 .cta-band {
-  background: #fff7ed;
-  border-radius: 20px;
-  padding: 28px;
-  border: 1px solid #fed7aa;
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 32px;
+  border: 1px solid rgba(225, 6, 0, 0.25);
+  box-shadow: 0 12px 24px rgba(11, 11, 13, 0.05);
 }
 
 .schedule {
@@ -177,9 +217,20 @@ section h2 {
   color: var(--muted);
 }
 
+a:hover {
+  color: var(--accent);
+}
+
 @media (max-width: 720px) {
   .nav {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .details > div:first-child {
+    border-left: none;
+    border-top: 4px solid var(--accent);
+    padding-left: 0;
+    padding-top: 16px;
   }
 }
