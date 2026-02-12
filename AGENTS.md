@@ -15,6 +15,7 @@
   - `{{globals.contact.address.full}}`
 - Keep city spelling consistent with `base/voice.json` (use **Mt. Pleasant**).
 - Use the `base/voice.json` gym name terminology (currently **Statewide Fitness**).
+- Contact must remain obfuscated in rendered HTML using encoded `data-*` attributes and be decoded at runtime via the page script (do not ship plaintext contact values directly in markup).
 
 ## Section conventions
 - `type` values must match `base/section-types.json` exactly (lowercase keys like `embed`).
