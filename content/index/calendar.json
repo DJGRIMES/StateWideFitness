@@ -5,7 +5,7 @@
   "title": "Class Schedule",
   "embed": {
     "provider": "googleCalendar",
-    "embedUrl": "TBD_PENDING_CONFIRMATION"
+    "embedUrl": "{{globals.tools.calendar.embedSrc}}"
   },
   "body": "Our weekly schedule includes open gym time, boxing technique classes, and MMA training, with wrestling coming soon.",
   "fallback": [
