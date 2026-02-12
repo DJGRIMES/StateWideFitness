@@ -99,12 +99,12 @@
         <h2>Class Schedule</h2>
         <p>
           Our weekly schedule includes open gym time, boxing technique classes,
-          and MMA training. Calendar embed coming soon.
+          and MMA training, with wrestling coming soon.
         </p>
         <div class="schedule" style="margin-top: 16px;">
           <div class="card">Open Gym: Mon–Thu, 1:00–8:00pm</div>
           <div class="card">Boxing Technique Circuit Training: Tue &amp; Thu, 5:30–6:30pm</div>
-          <div class="card">MMA / Kickboxing &amp; Wrestling: Mon–Thu, 8:00–9:00pm</div>
+          <div class="card">MMA / Kickboxing &amp; Wrestling: Mon–Thu, 8:00–9:00pm - coming soon</div>
         </div>
         <div style="margin-top: 18px;">
           <a class="button" href="#calendar">View Full Calendar</a>
@@ -176,15 +176,15 @@
           <div class="key-values">
             <div>
               <strong>Phone</strong>
-              <span>989-317-5896</span>
+              <span id="contact-phone" data-u="OTg5" data-v="MzE3" data-w="NTg5Ng=="></span>
             </div>
             <div>
               <strong>Email</strong>
-              <span>TBD_PENDING_CONFIRMATION</span>
+              <span id="contact-email" data-user="a29sbWFyZ2V0aGFycmlz" data-domain="eWFob28uY29t"></span>
             </div>
             <div>
               <strong>Address</strong>
-              <span>306 W. Michigan St, Centennial Hall, Downtown Mt. Pleasant, MI 48858</span>
+              <span id="contact-address" data-a="MzA2IFcuIE1pY2hpZ2FuIFN0" data-b="Q2VudGVubmlhbCBIYWxs" data-c="RG93bnRvd24gTXQuIFBsZWFzYW50" data-d="TUkgNDg4NTg="></span>
             </div>
           </div>
           <div style="margin-top: 18px;">
@@ -207,5 +207,35 @@
         <p class="muted">Boxing, fitness, and mentorship for all ages.</p>
       </div>
     </footer>
+
+    <script>
+      (() => {
+        const decode = (value) => atob(value);
+
+        const phoneEl = document.getElementById('contact-phone');
+        if (phoneEl) {
+          phoneEl.textContent = [
+            decode(phoneEl.dataset.u),
+            decode(phoneEl.dataset.v),
+            decode(phoneEl.dataset.w)
+          ].join('-');
+        }
+
+        const emailEl = document.getElementById('contact-email');
+        if (emailEl) {
+          emailEl.textContent = `${decode(emailEl.dataset.user)}@${decode(emailEl.dataset.domain)}`;
+        }
+
+        const addressEl = document.getElementById('contact-address');
+        if (addressEl) {
+          addressEl.textContent = [
+            decode(addressEl.dataset.a),
+            decode(addressEl.dataset.b),
+            decode(addressEl.dataset.c),
+            decode(addressEl.dataset.d)
+          ].join(', ');
+        }
+      })();
+    </script>
   </body>
 </html>
