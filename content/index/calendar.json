@@ -12,11 +12,5 @@
     "{{globals.schedule.events.0.displayLine}}",
     "{{globals.schedule.events.1.displayLine}}",
     "{{globals.schedule.events.2.displayLine}}"
-  ],
-  "ctas": [
-    {
-      "label": "View Full Calendar",
-      "linkKey": "calendar"
-    }
   ]
 }
