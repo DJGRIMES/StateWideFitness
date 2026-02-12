@@ -7,14 +7,27 @@
   "itemType": "contactField",
   "itemSchema": {
     "fields": {
-      "label": { "type": "string" },
-      "value": { "type": "string" }
+      "label": {
+        "type": "string"
+      },
+      "value": {
+        "type": "string"
+      }
     },
-    "requiredFields": ["label", "value"]
+    "requiredFields": [
+      "label",
+      "value"
+    ]
   },
   "items": [
-    { "label": "Phone", "value": "{{globals.contact.phone.display}}" },
-    { "label": "Email", "value": "{{globals.contact.email.display}}" },
+    {
+      "label": "Phone",
+      "value": "{{globals.contact.phone.display}}"
+    },
+    {
+      "label": "Email",
+      "value": "{{globals.contact.email.display}}"
+    },
     {
       "label": "Address",
       "value": "{{globals.contact.address.full}}"
@@ -23,7 +36,13 @@
   "ctas": [
     {
       "label": "Get Directions",
-      "linkKey": "directions"
+      "href": "{{globals.tools.map.placeQueryUrl}}",
+      "newTab": true
+    },
+    {
+      "label": "Pay Online",
+      "href": "{{globals.tools.payments.cloverCheckout}}",
+      "newTab": true
     }
   ]
 }
