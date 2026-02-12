@@ -5,13 +5,11 @@
     "lastUpdated": "2026-02-02",
     "notes": "Editable data points (single source of truth). Missing values are marked TBD_PENDING_CONFIRMATION."
   },
-
   "identity": {
     "siteName": "Statewide Fitness",
     "legalName": "",
     "tagline": "Boxing, fitness, and mentorship for all ages."
   },
-
   "contact": {
     "phone": {
       "display": "989-317-5896",
@@ -35,5 +33,50 @@
       "tiktok": "TBD_PENDING_CONFIRMATION",
       "other": []
     }
+  },
+  "schedule": {
+    "events": [
+      {
+        "id": "open-gym",
+        "name": "Open Gym",
+        "days": "Mon\u2013Thu",
+        "time": {
+          "start": "13:00",
+          "end": "20:00",
+          "display": "1:00\u20138:00pm"
+        },
+        "status": "active",
+        "notes": [],
+        "displayLine": "Open Gym: Mon\u2013Thu, 1:00\u20138:00pm"
+      },
+      {
+        "id": "boxing-technique-circuit-training",
+        "name": "Boxing Technique Circuit Training",
+        "days": "Tue & Thu",
+        "time": {
+          "start": "17:30",
+          "end": "18:30",
+          "display": "5:30\u20136:30pm"
+        },
+        "status": "active",
+        "notes": [],
+        "displayLine": "Boxing Technique Circuit Training: Tue & Thu, 5:30\u20136:30pm"
+      },
+      {
+        "id": "mma-kickboxing-wrestling",
+        "name": "MMA / Kickboxing & Wrestling",
+        "days": "Mon\u2013Thu",
+        "time": {
+          "start": "20:00",
+          "end": "21:00",
+          "display": "8:00\u20139:00pm"
+        },
+        "status": "coming_soon",
+        "notes": [
+          "Coming soon"
+        ],
+        "displayLine": "MMA / Kickboxing & Wrestling: Mon\u2013Thu, 8:00\u20139:00pm - coming soon"
+      }
+    ]
   }
 }
